@@ -1,0 +1,32 @@
+.layout { display: grid; grid-template-columns: 1fr 340px; gap: 24px; align-items: start; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+.title { font-size: 22px; font-weight: 700; margin-bottom: 16px; }
+.items { display: flex; flex-direction: column; gap: 12px; }
+.item { background: var(--bg-white); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; display: flex; gap: 14px; align-items: center; }
+.itemImg { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); flex-shrink: 0; }
+.itemInfo { flex: 1; }
+.itemName { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+.itemCat { font-size: 11px; color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+.itemBottom { display: flex; align-items: center; gap: 12px; }
+.itemPrice { font-size: 13px; color: var(--text-muted); }
+.itemTotal { font-size: 15px; font-weight: 700; color: var(--primary); font-family: 'Syne', sans-serif; }
+.removeBtn { padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: transparent; color: var(--text-muted); transition: all 0.15s; flex-shrink: 0; }
+.removeBtn:hover { background: #fee2e2; color: #dc2626; border-color: #fca5a5; }
+.summary { background: var(--bg-white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+.summaryTitle { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.summaryRow { display: flex; justify-content: space-between; font-size: 13px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.free { color: #16a34a; font-weight: 600; }
+.summaryTotal { font-weight: 700; font-size: 15px; border-bottom: none; padding-top: 12px; color: var(--text); }
+.addressField { margin: 16px 0; }
+.addressField label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+.addressField textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; background: var(--bg); color: var(--text); resize: none; }
+.addressField textarea:focus { border-color: var(--primary); background: #fff; outline: none; }
+.orderBtn { width: 100%; padding: 13px; background: var(--primary); color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: background 0.15s; }
+.orderBtn:hover:not(:disabled) { background: var(--primary-hover); }
+.orderBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+.empty { text-align: center; padding: 80px 20px; }
+.emptyIcon { color: var(--text-muted); margin-bottom: 16px; }
+.empty h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.empty p { color: var(--text-muted); margin-bottom: 24px; }
+.shopBtn { display: inline-flex; padding: 11px 24px; background: var(--primary); color: #fff; border-radius: 8px; font-weight: 600; font-size: 14px; }
+.loading { text-align: center; padding: 60px; color: var(--text-muted); }

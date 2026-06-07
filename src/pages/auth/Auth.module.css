@@ -1,0 +1,15 @@
+.page { min-height: calc(100vh - 60px); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.card { background: var(--bg-white); border: 1px solid var(--border); border-radius: 16px; padding: 40px; width: 100%; max-width: 400px; box-shadow: var(--shadow-md); text-align: center; }
+.logo { width: 48px; height: 48px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 22px; color: #fff; }
+.title { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.sub { color: var(--text-muted); font-size: 13px; margin-bottom: 28px; }
+.form { text-align: left; display: flex; flex-direction: column; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 13px; font-weight: 600; }
+.field input { padding: 11px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--bg); color: var(--text); transition: border 0.15s; }
+.field input:focus { border-color: var(--primary); background: #fff; }
+.btn { padding: 12px; background: var(--primary); color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; margin-top: 4px; transition: background 0.15s; }
+.btn:hover:not(:disabled) { background: var(--primary-hover); }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.switchText { margin-top: 20px; font-size: 13px; color: var(--text-muted); }
+.switchLink { color: var(--primary); font-weight: 600; }

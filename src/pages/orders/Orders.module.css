@@ -1,0 +1,19 @@
+.title { font-size: 22px; font-weight: 700; margin-bottom: 20px; }
+.list { display: flex; flex-direction: column; gap: 14px; }
+.orderCard { background: var(--bg-white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.orderHeader { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--border); }
+.orderId { font-family: monospace; font-weight: 700; font-size: 13px; display: block; margin-bottom: 2px; }
+.date { font-size: 12px; color: var(--text-muted); }
+.badge { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; text-transform: capitalize; }
+.orderBody { padding: 16px 20px; }
+.orderItems { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.orderItem { display: flex; justify-content: space-between; font-size: 13px; }
+.qty { color: var(--text-muted); }
+.orderFooter { border-top: 1px solid var(--border); padding-top: 12px; display: flex; justify-content: space-between; align-items: center; }
+.address { font-size: 12px; color: var(--text-muted); max-width: 60%; }
+.total { font-size: 14px; color: var(--text); }
+.loading { text-align: center; padding: 60px; color: var(--text-muted); }
+.empty { text-align: center; padding: 80px 20px; }
+.emptyIcon { color: var(--text-muted); margin-bottom: 16px; }
+.empty h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.empty p { color: var(--text-muted); }

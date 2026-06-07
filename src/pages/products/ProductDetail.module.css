@@ -1,0 +1,23 @@
+.back { display: flex; align-items: center; gap: 6px; padding: 8px 14px; border: 1px solid var(--border); border-radius: 8px; background: transparent; font-size: 13px; font-weight: 500; color: var(--text-muted); margin-bottom: 24px; transition: all 0.15s; }
+.back:hover { color: var(--text); background: var(--bg-white); }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+.gallery {}
+.mainImg { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg); }
+.thumbs { display: flex; gap: 8px; margin-top: 10px; }
+.thumb { width: 60px; height: 60px; object-fit: cover; border-radius: 8px; border: 2px solid var(--border); cursor: pointer; transition: border-color 0.15s; }
+.activeThumb { border-color: var(--primary); }
+.info { display: flex; flex-direction: column; gap: 16px; }
+.category { font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--primary); letter-spacing: 0.06em; }
+.title { font-size: 28px; font-weight: 700; line-height: 1.3; }
+.priceRow { display: flex; align-items: center; gap: 10px; }
+.price { font-size: 28px; font-weight: 800; font-family: 'Syne', sans-serif; color: var(--primary); }
+.originalPrice { font-size: 16px; color: var(--text-muted); text-decoration: line-through; }
+.discountBadge { padding: 3px 10px; background: #dcfce7; color: #16a34a; border-radius: 20px; font-size: 12px; font-weight: 700; }
+.description { color: var(--text-muted); line-height: 1.7; font-size: 14px; }
+.inStock { color: #16a34a; font-weight: 600; font-size: 13px; }
+.outStock { color: #dc2626; font-weight: 600; font-size: 13px; }
+.addBtn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 28px; background: var(--primary); color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; transition: background 0.15s; }
+.addBtn:hover:not(:disabled) { background: var(--primary-hover); }
+.addBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+.loading { text-align: center; padding: 80px; color: var(--text-muted); }
